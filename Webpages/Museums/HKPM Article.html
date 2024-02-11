@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Hong Kong Palace Museum</title>
+    <link rel="icon" type="image/png" href="images/Museum Icon.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".txt").css("color","blue");
+        })
+    </script>
+    <style type="text/css">
+
+/*
+flip card
+*/
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+        h3{color: #d022e0;background-color:transparent;font-size: 40px;font-family: "Times New Roman";}
+        p{color: #130ff1;background-color:transparent;font-size: 26px;font-family: "Times New Roman";}
+        #img_box{position:absolute;margin: 7px;width: 1300px;height:2000px;}
+        #txt_box_1{position:absolute;top: 1px;left: 50px;text-align:justify;}
+        #txt_box_2{position:absolute;width:1700px;height: 2000px;top: 70px;left: 50px;right: 50px;text-align:justify;}
+        #box1{width:1750px;height:0px;background-color: #FFFFFF}
+    
+        .content{font-family: "Comic Sans MS";font-size: 25px;color:#130ff1c0}
+
+.flex-container0 {
+    width: 750px;
+    height: 10px;
+    margin: 0;
+    border: 0px solid #666;
+    justify-content: space-around;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    /* Standard syntax */
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container0 div {
+    margin: 8px 0px 0px 0px;
+}
+.c1 {
+    width: 100px;
+}
+.c2 {
+    width: 650px;
+}
+
+.flex-container1 {
+    width: 1100px;
+    height: 950px;
+    margin: 5;
+	font-size: 32px;
+    border: 0px solid #666;
+    justify-content: space-around;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    /* Standard syntax */
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container1 div {
+    margin: 0px 0px 0px 0px;
+}
+.a1 {
+    width: 500px;
+}
+
+.flex-container2 {
+    width: 1750px;
+    height: 100px;
+    margin: 0;
+    top: 2000px;
+    border: 0px solid #666;
+    justify-content: space-around;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    /* Standard syntax */
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container2 div {
+    margin: 40px 30px 30px 30px;
+}
+.b1 {
+    width: 1000px;
+    padding: 5px;
+}
+
+.b2 {
+    margin: 30px 0px 30px 30px;
+    padding:15px 0px 30px 250px;
+    width: 500px;
+}
+    </style>
+</head>
+<body>
+<div id="img_box">
+    <img src="HKPM/P (0).jpg" width="1850px" height="2100px" style="opacity: 0.3">
+    <div id="txt_box_1">
+        <div class="flex-container0">
+            <div class="c1">
+                <a  href="index.html" data-toggle="tooltip" data-placement="left" title="English Website"><img src="images/Museum Icon 2.png" width="70%" alt="未能顯示圖示"></a>   
+            </div>
+
+            <div class="c2">
+                <h3>Hong Kong Palace Museum</h3>
+            </div>
+        </div>     
+    </div>  
+    <div id="txt_box_2">
+        <p>Overlooking to the beautiful Victoria Harbor, no one would miss noticing a colossal brownish inverted trapezoidal building rising from the ground. Surrounded by the West Kowloon Waterfront Promenade, the Hong Kong Palace Museum (HKPM) is elegantly situated at the western tip of the West Kowloon Cultural District. Conveniently located at the heart of the city, the museum is easily accessible by various means of public transport. With a total area of over ten thousand square metres, HKPM is one of the largest art and history museums in Hong Kong. </p>
+
+        <p>Established in July 2022, the newly built museum is home to over nine hundred invaluable treasures from the Palace Museum of Beijing featuring Chinese art and culture. The seven-storey museum building comprises one of the world’s biggest and best-curated collections of Chinese artefacts and artworks. The museum has nine exhibition halls with a total space of 7,800 square metres. Seven permanent themed galleries reveal the court life of the Qing royal family when they were living in the Forbidden City, while two other special display halls showcase priceless artefacts from other museums across the globe for a certain period of time. Each exhibition hall contains at least a hundred pieces of valuable relics from around the world. </p>
+
+        <p>The Palace Museum is open all year round except every Tuesday and the first two days of the Chinese New Year. In order to attract a wider audience, free admission is granted every Wednesday in the first year of opening but advance online reservation is required to be made at the museum’s official website. Unscheduled visitors are also welcome to walk in and the same-day tickets will be available at museum’s ticket office at the entrance.</p>
+        
+        <p>Exploring every single gallery of the museum will certainly take you a whole day. If you would like to take a break, you can find something to eat in one of three on-site museum restaurants and buy some souvenirs you like in the museum shop.  </p>
+
+        <p>As the latest world-class cultural landmark, the Hong Kong Palace Museum preserves and exhibits significant Chinese cultural and historical curios, enabling Hong Kong citizens to rediscover the legacy of our own nation and to make us familiar with our own history and culture. This is the place where you can learn historical lessons not taught in schools. It is the museum that deserves to be visited time and time again. </p>
+        
+        <div class="flex-container1">
+            <div class="a1">
+                <div id="box1">
+                    <div class="container-fluid">
+                      <div class="row">
+                          <div class="col-6 col-sm-4">
+                              <div class="card card-flip h-100">
+                                  <div class="card-front text-white bg-dark">
+                                      <div class="card-body">
+                                          <i class="fa fa-search-plus fa-5x float-right"></i>
+                                          <h3 class="card-title">Gravekeeper</h3>
+                                          <p class="card-text">鎮墓獸</p>
+                                            <img src="HKPM/P (2).jpg" alt="Avatar" style="width:300px;height:300px;">
+                                      </div>
+                                  </div>
+                                  <div class="card-back bg-info">
+                                      <div class="card-body">
+                                          <h3 class="card-title">Cranes</h3>
+                                          <p class="card-text">鶴</p>
+                                          <!--<a href="https://european-union.europa.eu/index_en">-->
+                                            <img src="HKPM/P (6).jpg" alt="Avatar" style="width:300px;height:300px;">
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-6 col-sm-4">
+                              <div class="card card-flip h-100">
+                                  <div class="card-front text-white bg-warning">
+                                      <div class="card-body">
+                                          <i class="fa fa-search-plus fa-5x float-right"></i>
+                                          <h3 class="card-title">Antique Clock</h3>
+                                          <p class="card-text">古董時鐘</p>
+                                            <img src="HKPM/P (7).jpg" alt="Avatar" style="width:300px;height:300px;">
+                                      </div>
+                                  </div>
+                                  <div class="card-back bg-secondary text-white">
+                                      <div class="card-body">
+                                          <h3 class="card-title">Inkstones</h3>
+                                          <p class="card-text">墨硯</p>
+                                            <img src="HKPM/P (11).jpg" alt="Avatar" style="width:300px;height:300px;">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-6 col-sm-4">
+                              <div class="card card-flip h-100">
+                                  <div class="card-front text-white bg-success">
+                                      <div class="card-body">
+                                          <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
+                                          <h3 class="card-title">Special Display Room</h3>
+                                          <p class="card-text">特別展廳</p>
+                                            <img src="HKPM/P (8).jpg" alt="Avatar" style="width:300px;height:300px;">
+                                      </div>
+                                  </div>
+                                  <div class="card-back bg-primary">
+                                      <div class="card-body text-white">
+                                          <h3 class="card-title">Gallery One</h3>
+                                          <p class="card-text">一號展覽廳</p>
+                                            <img src="HKPM/P (9).jpg" alt="Avatar" style="width:300px;height:300px;">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-6 col-sm-4 my-3">
+                              <div class="card card-flip h-100">
+                                  <div class="card-front text-white bg-danger">
+                                      <div class="card-body">
+                                          <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
+                                          <h3 class="card-title">Display Room</h3>
+                                          <p class="card-text">展示廳</p>
+                                            <img src="HKPM/P (1).jpg" alt="Avatar" style="width:300px;height:300px;">
+                                      </div>
+                                  </div>
+                                  <div class="card-back bg-secondary">
+                                      <div class="card-body text-white">
+                                          <h3 class="card-title">Tripod</h3>
+                                          <p class="card-text">鼎</p>
+                                            <img src="HKPM/P (3).jpg" alt="Avatar" style="width:300px;height:300px;">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-6 col-sm-4 my-3">
+                              <div class="card card-flip h-100">
+                                  <div class="card-front text-white bg-info">
+                                      <div class="card-body">
+                                          <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
+                                          <h3 class="card-title">Exhibition Hall</h3>
+                                          <p class="card-text">展覽廳</p>
+                                            <img src="HKPM/P (4).jpg" alt="Avatar" style="width:300px;height:300px;">
+                                      </div>
+                                  </div>
+                                  <div class="card-back bg-success">
+                                      <div class="card-body text-white">
+                                          <h3 class="card-title">Qing Court Attire</h3>
+                                          <p class="card-text">清代宮廷服飾</p>
+                                            <img src="HKPM/P (5).jpg" alt="Avatar" style="width:300px;height:300px;">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-6 col-sm-4 my-3">
+                              <div class="card card-flip h-100">
+                                  <div class="card-front text-white bg-danger">
+                                      <div class="card-body">
+                                          <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
+                                          <h3 class="card-title">Antique Vase</h3>
+                                          <p class="card-text">古董花瓶</p>
+                                            <img src="HKPM/P (10).jpg" alt="Avatar" style="width:300px;height:300px;">
+                                      </div>
+                                  </div>
+                                  <div class="card-back bg-dark">
+                                      <div class="card-body text-white">
+                                          <h3 class="card-title">Food Truck</h3>
+                                          <p class="card-text">美食車</p>
+                                            <img src="HKPM/P (12).jpg" alt="Avatar" style="width:400px;height:300px;">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-container2">
+            <div class="b1">
+                <div class="d-grid gap-2">
+                    <a  href="Oil Painting.html" button type="button" class="btn btn-outline-primary btn-lg content"
+                    role="button" target="_blank">Click here to see more photos from Hong Kong Palace Museum</button></a>
+                </div>
+            </div>   
+            <div class="b2">
+                <p class="text-right text-warning" style="font-size: 30px; color: rgb(32, 102, 4);
+                text-shadow: 16px 15px 3px #F75000, 40px 30px 5px #130780;">
+                <a href="Chinese.html" data-toggle="tooltip" data-placement="right" title="中文網頁">
+                    <img src="cube b.png" style="width:80px;height:80px" ></a>Alientopia</p>
+            </div>
+        </div>
+    </div>   
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+</body>
+</html>

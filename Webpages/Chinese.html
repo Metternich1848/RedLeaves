@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">	
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Alientopia">
+    <meta name="viewport" content="width=device-width">
+    <!-- UNICORN CSS STYLES -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/showcase.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/grids.css">
+    <!-- ICONS & FONTS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <!--[if lt IE 9]>-->
+    <script src="css/font-awesome.min.css"></script>
+    <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <!--[endif]-->
+
+    <script src="assets/js/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/google-code-prettify/prettify.js" type="text/javascript"></script>
+    <script src="assets/js/docs.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link type="text/css" href="assets/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-theme/jquery.ui.1.10.0.ie.css"/>
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Alientopia</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+
+    <script>$(document).ready(function() {
+        clockUpdate();
+        setInterval(clockUpdate, 1000);
+      })
+      /*Clock*/
+      function clockUpdate() {
+        var date = new Date();
+        $('.digital-clock').css({'color': '#fff', 'text-shadow': '0 0 6px #00f' })
+        function addZero(x) {
+          if (x < 10) {
+            return x = '0' + x;
+          } else {
+            return x;
+          }
+        }
+      
+        function twelveHour(x) {
+          if (x > 12) {
+            return x = x - 12;
+          } else if (x == 0) {
+            return x = 12;
+          } else {
+            return x;
+          }
+        }
+      
+        var h = addZero(twelveHour(date.getHours()));
+        var m = addZero(date.getMinutes());
+        var s = addZero(date.getSeconds());
+      
+        $('.digital-clock').text(h + ':' + m + ':' + s)
+      }
+      </script>
+
+<style>
+     /*Full Screen*/
+     .bg {
+        position:fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index:-999;
+        }
+        .bg img {
+            height: 100%;
+            width: 100%;
+        }
+
+.flex-container1 {
+    width: 1700px;
+    height: 90px;
+    margin: 0 auto;
+	font-size: 32px;
+    border: 0px solid #666;
+    justify-content: space-around;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    /* Standard syntax */
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container1 div {
+  margin: 10px 0px 0px 0px;
+}
+.a1 {
+    width: 80px;
+}
+.a2 {
+    width: 660px;
+}
+.a3 {
+    width: 750px;
+}
+.a4{
+    width: 200px;
+}
+
+.flex-container2 {
+    width: 1800px;
+    height: 420px;
+    margin: 1px 0px 0px 0px;
+    border:0;
+    padding:  0px 20px 40px 20px;
+	font-size: 28px;
+    border: 0px solid #666;
+    justify-content: flex-start;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap; /* wrap items to create multi-row flex container */
+    -webkit-align-content: space-between;
+    /* Standard syntax */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+
+.flex-container2 div {
+  width: 820px;
+	height: 500px;
+}
+.b1 {
+    padding:  10px 10px 10px 10px;
+}
+.b2 {
+    padding:  10px 30px 20px 50px;
+}
+
+.flex-container3 {
+    width: 1800px;
+    height: 330px;
+    margin: 0 auto;
+    border: 0px solid #666;
+    justify-content:space-around;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    /* Standard syntax */
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.flex-container3 div {
+    padding: auto;
+}
+.c1 {
+
+    width: 200px;
+    padding: 15px;
+}
+.c2 {
+
+    width: 670px;
+    padding:  10px 20px 10px 20px;
+}
+.c3 {
+
+    width: 630px;
+}
+
+#svgBox{width:100%; height: 50%; margin:0px}
+      .text{font-size:75px;font-weight:bold;text-transform:uppercase;fill:none;
+      stroke-width:2px;stroke-dasharray:90 310;animation:stroke 6s infinite linear;}
+      .text-1{stroke:#3498db;text-shadow:0 0 5px #3498db;animation-delay:-1.5s;}
+      .text-2{stroke:#f39c12;text-shadow:0 0 5px #f39c12;animation-delay:-3s;}
+      .text-3{stroke:#e74c3c;text-shadow:0 0 5px #e74c3c;animation-delay:-4.5s;}
+      .text-4{stroke:#9b59b6;text-shadow:0 0 5px #9b59b6;animation-delay:-6s;}@keyframes 
+      stroke{100%{stroke-dashoffset:-400;}}.svgText{width:600px;margin:0;}
+      .svgText h3{font-size:18px;color:#333;line-height:2;}.svgText p{font-size:16px;color:#888;line-height:2;}
+      .svgText p a,.svgText p a:hover{color:#01a6fc;font-weight:600;}.svgText ul li{font-size:16px;color:#888;line-height:2;}
+
+/*
+Clock
+*/
+@font-face {
+  font-family: 'DIGITAL';
+  src: url('https://cssdeck.com/uploads/resources/fonts/digii/DS-DIGII.TTF');
+}
+
+html {
+  height: 100%;
+  background: radial-gradient(#ffffff, #ffffff);
+}
+
+.digital-clock {
+  margin: 0;
+  position:relative;
+  top: 0;
+  left: 0;
+  bottom: 65;
+  right: 0;
+  width: 200px;
+  height: 60px;
+  color: #ffffff;
+  border: 2px solid #999;
+  border-radius: 4px;
+  text-align: center;
+  font: 50px/60px 'DIGITAL', Helvetica;
+  background: linear-gradient(90deg, #000, #555);
+}
+    
+
+/*Carousel*/
+.only-for-me {
+  position: relative;
+  top:27%;
+  transform: translateY(-50%);
+}
+.carousel-item img {
+  width:100%;
+  height:100%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width:50px;
+  height:50px;
+  background-color: #fc450d;
+  border-radius: 50%;
+  top: calc(50% - 25px);
+  opacity: .5;
+}
+.carousel-control-prev {
+  left: 5%;
+}
+.carousel-control-next {
+  right: 5%;
+}
+
+/*文字托底及字體*/
+    #rcorner {
+    border-radius: 25px;
+    background: rgb(245, 228, 19,0.3);
+  }
+
+    .content{font-family: "標楷體";font-size: 28px;color:#09700C}
+
+/*穿透背景*/
+    *{margin: 0px;padding: 0px;}
+html,body{width:100%;height:100%}
+body{
+  background-color: rgba(0,0,0,0);
+}
+
+  </style>
+</head>
+<body>
+      <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+      </script>
+
+        <div class="bg">
+          <img src="Sakura 11.jpg">
+        </div>
+
+        <div class="flex-container1">
+            <div class="a1"><a href="Myself.html" data-toggle="tooltip" data-placement="right" title="Myself"><img src="images/Logo_colour_trans.png" width="120%" alt="未能顯示圖示"></a></div>
+            <div class="a2">      
+                <div id="svgBox">
+                    <svg width="70%" height="130">
+                        <text text-anchor="middle" x="50%" y="50%" class="text text-1">
+                        Alientopia
+                        </text>
+                        <text text-anchor="middle" x="50%" y="50%" class="text text-2">
+                        Alientopia
+                        </text>
+                        <text text-anchor="middle" x="50%" y="50%" class="text text-3">
+                        Alientopia
+                        </text>
+                        <text text-anchor="middle" x="50%" y="50%" class="text text-4">
+                        Alientopia
+                        </text>
+                    </svg>
+                </div>
+            </div>
+            <div class="a3">
+              <a href="Trip to Shenzhen.html" class="btn btn-outline-primary btn-lg"  role="button" target="_blank">
+                Latest Update
+              </a>
+              <a href="Dinosaurs.html" class="btn btn-outline-secondary btn-lg"  role="button" target="_blank">
+                Books
+              </a>
+              <a  href="Museums.html" class="btn btn-outline-success btn-lg" role="button" target="_blank">
+                Museums
+              </a>
+              <a href="Shoebill.html" class="btn btn-outline-danger btn-lg"  role="button" target="_blank">
+                Animals
+              </a>
+              <a href="Kinoshita.html" class="btn btn-outline-warning btn-lg"  role="button" target="_blank">
+                Novels
+              </a>
+              <a href="Mainland.html" class="btn btn-outline-info btn-lg"  role="button" target="_blank">
+                國內影片 
+              </a>
+            </div>
+            <div class="a4">
+                <div class="digital-clock">00:00:00</div> 
+            </div>
+        </div>
+
+        <div class="flex-container2">
+          <div class="b1">
+              <div id="myCarousel" class="carousel slide"  data-ride="carousel" data-interval=3000>
+                     <!--輪播內容-->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <a href="https://www.google.com/search?q=%E7%9C%9F%E5%AF%A6%E5%B0%BA%E5%AF%B8%E7%9A%84%E5%8F%A4%E7%94%9F%E7%89%A9%E5%9C%96%E9%91%91&tbm=isch&ved=2ahUKEwiM5uW97Ob9AhX-TPUHHa0QC0QQ2-cCegQIABAA&oq=%E7%9C%9F%E5%AF%A6%E5%B0%BA%E5%AF%B8%E7%9A%84%E5%8F%A4%E7%94%9F&gs_lcp=CgNpbWcQARgBMgQIIxAnMgUIABCABFAAWABg5gZoAHAAeACAASeIASeSAQExmAEAqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=HmYWZIzfKP6Z1e8PraGsoAQ&bih=961&biw=1920#imgrc=OeL96e1KGsIygM"> 
+                          <img src="Sakura Dinosaurf.png" class="d-block img-fluid" style="width:100%;" alt="" >
+                          </a>
+                          <!--<div class="carousel-caption">
+                              <h3>Sakura</h3>
+                          </div>-->
+                      </div>
+                      <div class="carousel-item">
+                          <a href="https://livejapan.com/en/article-a0001033/"> 
+                          <img src="Sakura Af_PNG.png" class="d-block img-fluid" style="width:100%;" alt="" >
+                          </a>
+                      </div>       
+                      
+                      <div class="carousel-item">
+                        <a href="https://livejapan.com/en/article-a0001033/"> 
+                        <img src="Sakura 1f.jpg" class="d-block img-fluid" style="width:100%;" alt="" >
+                        </a>
+                      </div>  
+                      
+                      <div class="carousel-item">
+                        <a href="https://livejapan.com/en/article-a0001033/"> 
+                        <img src="Sakura Df.png" class="d-block img-fluid" style="width:100%;" alt="" >
+                        </a>
+                      </div> 
+
+                      <div class="carousel-item">
+                        <a href="https://livejapan.com/en/article-a0001033/"> 
+                        <img src="Sakura 2f.jpg" class="d-block img-fluid" style="width:100%;" alt="" >
+                        </a>
+                      </div>  
+
+                      <div class="carousel-item">
+                        <a href="https://livejapan.com/en/article-a0001033/"> 
+                        <img src="Sakura Ef.png" class="d-block img-fluid" style="width:100%;" alt="" >
+                        </a>
+                      </div> 
+
+                      <div class="carousel-item">
+                        <a href="https://livejapan.com/en/article-a0001033/"> 
+                        <img src="Sakura 3f.jpg" class="d-block img-fluid" style="width:100%;" alt="" >
+                        </a>
+                      </div>  
+
+                      <div class="carousel-item">
+                        <a href="https://livejapan.com/en/article-a0001033/"> 
+                        <img src="Sakura Gf.png" class="d-block img-fluid" style="width:100%;" alt="" >
+                        </a>
+                      </div> 
+
+                      <div class="carousel-item">
+                        <a href="https://livejapan.com/en/article-a0001033/"> 
+                        <img src="Sakura 5f.jpg" class="d-block img-fluid" style="width:100%;" alt="" >
+                        </a>
+                      </div>  
+                      
+                      <div class="carousel-item">
+                        <a href="https://livejapan.com/en/article-a0001033/"> 
+                        <img src="Sakura Hf.png" class="d-block img-fluid" style="width:100%;" alt="" >
+                        </a>
+                      </div> 
+
+                      <div class="carousel-item">
+                        <a href="https://livejapan.com/en/article-a0001033/"> 
+                        <img src="Sakura 7f.jpg" class="d-block img-fluid" style="width:100%;" alt="" >
+                        </a>
+                      </div>  
+
+                      <div class="carousel-item">
+                        <a href="https://livejapan.com/en/article-a0001033/"> 
+                        <img src="Sakura If.png" class="d-block img-fluid" style="width:100%;" alt="" >
+                        </a>
+                      </div> 
+
+                      <div class="carousel-item">
+                        <a href="https://livejapan.com/en/article-a0001033/"> 
+                        <img src="Sakura 8f.jpg" class="d-block img-fluid" style="width:100%;" alt="" >
+                        </a>
+                      </div>  
+
+                       <!--輪播控制-->
+                      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span></a>
+                      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true">
+                        </span><span class="sr-only">Next</span></a> 
+                    </div> 
+              </div>
+          </div>
+          <div class="b2">
+            <p id="rcorner" class="content">每年三月中旬始，許多長著櫻木的公園裡、排列著櫻樹的林蔭大道上，都會舉辦賞櫻活動，
+                稱作「櫻花祭（桜まつり）」。日語中被稱作「花見(はなみ)」的賞櫻活動已有過千年的歷史。時至今日，
+                每年春天成千上萬的日本國民都會湧進花海中，享受著櫻花稍縱即逝的美態。親朋好友擠在盛開的櫻花樹下，
+                一邊賞櫻，一邊享用自製的家常菜。花見團子、櫻花麻糬和抹茶皆是賞花時最受歡迎的傳統食品。
+                由於千姿百態的櫻花只會在早春開花，而且花期往往不超過兩週，因此櫻花歷來都被視為轉瞬即逝、高貴顯要的象徵。
+                櫻花雖然不是日本的國花，但卻深受日本民眾的喜愛。一年一度迎接春天的賞花祭，成為欣賞大自然短暫之美的好時節，
+                也是體味「世上没有永恒」這道理的好機會。
+                </p>
+          </div>
+        </div>
+      
+
+        <div class="flex-container3">
+            <div class="c1">
+                <a href="https://pakkiyick.tumblr.com/" data-toggle="tooltip" data-placement="right" title="English Online Diary "><img src="DEMON.png" width="40%"></a>
+                <a href="https://blog.xuite.net/pakki/blog" data-toggle="tooltip" data-placement="right" title="中文網上日誌"><img src="INNOCENT2.png" width="40%"></a>
+            </div>
+            <div class="c2">
+                <a href="https://pakkiyick.tumblr.com/" data-toggle="tooltip" data-placement="right" title="Tumblr"><img src="Tumblr.png" width="13%"></a>
+                <a href="https://twitter.com/pakki2003" data-toggle="tooltip" data-placement="right" title="Twitter"><img src="Twitter.png" width="13%"></a>
+                <a href="https://www.instagram.com/yickchris/" data-toggle="tooltip" data-placement="right" title="Instagram"><img src="Instagram.png" width="13%"></a>
+                <a href="http://www.pinterest.com/pakki2003" data-toggle="tooltip" data-placement="right" title="Pinterest"><img src="Pinterest.png" width="13%"></a>
+                <a href="https://www.facebook.com/chris.yick1" data-toggle="tooltip" data-placement="right" title="Facebook"><img src="Facebook.png" width="13%"></a>
+                <a href="https://www.youtube.com/@pakkiyick/videos" data-toggle="tooltip" data-placement="right" title="Youtube"><img src="Youtube.png" width="13%"></a>
+            </div>
+            <div class="c3">
+                <p class="text-right text-success" style="font-size: 30px; color: rgb(32, 102, 4);
+                text-shadow: 16px 15px 3px #F75000, 40px 30px 5px #93ac09;"><audio src="Hotaru.mp3" autoplay controls loop="loop"></audio>
+                <a href="index.html" data-toggle="tooltip" data-placement="right" title="English Website">
+                <img src="cube b.png" style="width:80px;height:80px"></a>Alientopia</p>
+            </div>
+        </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script src="js/popper.min.js"></script> 
+            <script src="js/bootstrap-4.3.1.js"></script>
+          </div>
+</body>
+</html>

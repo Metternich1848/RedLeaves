@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hong Kong Museums</title>
+<link rel="icon" type="image/png" href="images/Museum Icon.png">
+<style>
+     /*Full Screen*/
+	 .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -999;
+        }
+        .bg img {
+            height: 100%;
+            width: 100%;
+        }
+
+	.img {
+    border-radius: 20px;
+}
+
+	.span1{
+		color:yellow;
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 30px;
+	}
+
+		h3{color: #e2df2a;background-color:transparent;font-size: 40px;font-family: "Fixedsys";}
+        .content{font-family: "Comic Sans MS";font-size: 25px;color:#130ff1c0}
+	
+.flex-container1 {
+    width: 750px;
+    height: 30px;
+    margin: 5px;
+    justify-content: space-around;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    /* Standard syntax */
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container1 div {
+    margin: 0px 0px 0px 0px;
+}
+.a1 {
+    padding:10px;
+	width: 50px;
+    height: 10px;
+}
+.a2 {
+    width: 650px;
+}
+
+.flex-container2 {
+    width: 750px;
+    height: 750px;
+    margin: 15px 0px 0px 50px;
+    border:0;
+    padding:  0px 0px 0px 0px;
+	font-size: 28px;
+    justify-content: flex-start;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap; /* wrap items to create multi-row flex container */
+    -webkit-align-content: space-between;
+    /* Standard syntax */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+.flex-container2 div {
+  	width: 750px;
+	height: 750px;
+}
+.b1 {
+  padding:  0px 0px 0px 50px;
+}
+
+.flex-container3 {
+    width: 750px;
+    height: 80px;
+    justify-content: space-around;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    /* Standard syntax */
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container3 div {
+    margin: 65px -850px 0px 1050px;
+}
+
+.c1 {
+    width: 750px;
+}
+
+</style>
+
+<!--默认设置-->
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+<!--核心样式-->
+<link rel="stylesheet" type="text/css" href="css/style_museums.css" />
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+
+</head>
+
+<body>
+	<div class="bg">
+		<img src="Museums/Museum Background.jpg">
+	</div>
+
+	<div class="flex-container1">
+		<div class="a1">
+			<a  href="index.html" data-toggle="tooltip" data-placement="left" title="English Website"><img src="Images/Museum Icon 2.png" width="100%" alt="未能顯示圖示"></a>   
+		</div>
+
+		<div class="a2">
+			<h3>Hong Kong Museums</h3>
+		</div>
+	</div>     
+
+	<div class="flex-container2">
+		<div class="b1">
+			<ul id="container" class="clearfix">
+				<li>
+				<img class="img" src="Museums/HKPM thumb.jpg">
+					<p>
+					<a href="Museums/HKPM Article.html" target="_blank"><span1 class="span1" style="text-align: center; display:block;line-height:250px;">Hong Kong Palace Museum</span1></a>
+						<i></i>
+					</p>
+				</li>
+				<li>
+					<img class="img" src="Museums/HKRM thumb.jpg">
+					<p>
+					<a href="Museums/HKRM.html" target="_blank"><span1 class="span1" style="text-align: center; display:block;line-height:250px;">Hong Kong Railway Museum</span1></a>
+						<i></i>
+					</p>
+				</li>
+				<li style="width:400px; height:530px; margin:10px 0 0 0;">
+					<img class="img" src="Museums/Flower Show thumb.jpg"  style="width:400px !important; height:530px !important;">  
+					<p>
+					<a href="Museums/Flower Show Article.html" target="_blank"><span1 class="span1" style="text-align: center; display:block;line-height:530px;">Hong Kong Flower Show 2023</span1></a>
+						<i></i>
+					</p>
+				</li>
+				<li style="margin-top:-260px;">
+					<img class="img" src="Museums/MPlus  thumb.jpg">
+					<p>
+					<a href="Museums/M Plus.html" target="_blank"><span1 class="span1" style="text-align: center; display:block;line-height:250px;">M+ Museum</span1></a>
+						<i></i>
+					</p>
+				</li>
+				<li style="margin-top:-260px;">
+					<img class="img" src="Museums/HKArt thumb.jpg">
+					<p>
+					<a href="https://hk.art.museum/tc/web/ma/home.html" target="_blank"><span1 class="span1" style="text-align: center; display:block;line-height:250px;">Hong Kong Museum of Art</span1></a>
+						<i></i>
+					</p>
+				</li>
+				<li style="  margin:0 10px 10px 0;">
+					<img class="img" src="Museums/HKSci thumb.jpeg">
+					<p>
+					<a href="https://hk.science.museum/tc/web/scm/index.html" target="_blank"><span1 class="span1" style="text-align: center; display:block;line-height:250px;">Hong Kong Science Museum</span1></a>
+						<i></i>
+					</p>
+				</li>
+				<li style="  margin:0 10px 10px 0;">
+					<img class="img" src="Museums/HKSpace thumb.jpg">
+					<p>
+					<a href="https://www.lcsd.gov.hk/CE/Museum/Space/en_US/web/spm/home.html" target="_blank"><span1 class="span1" style="text-align: center; display:block;line-height:250px;">Hong Kong Space Museum</span1></a>
+						<i></i>
+					</p>
+				</li>
+				<li style="  margin:0 ">
+					<img class="img" src="Museums/HKHeritage thumb.jpg">
+					<p>
+					<a href="https://www.amo.gov.hk/en/visitor-centre/heritage-discovery-centre/index.html" target="_blank"><span1 class="span1" style="text-align: center; display:block;line-height:250px;font-size: 25px;">Hong Kong Heritage Discovery Centre</span1></a>
+						<i></i>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<div class="flex-container3">
+            <div class="c1">
+                <p class="text-left text-warning" style="font-size: 30px; color: rgb(32, 102, 4);
+                text-shadow: 16px 15px 3px #F75000, 40px 30px 5px #130780;">
+                <a href="Chinese.html" data-toggle="tooltip" data-placement="left" title="中文網頁">
+                    <img src="Images/cube b.png" style="width:80px;height:80px" ></a>Alientopia</p>
+            </div>
+        </div>
+ <script type="text/javascript" src="js/script.js"></script> 
+ 
+</body>
+</html>
